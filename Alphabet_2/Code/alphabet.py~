@@ -1,0 +1,15 @@
+#! /usr/bin/env python
+import string
+
+#Written by: Sarah Lakke
+#Date: 2019-1-17
+#Add the alphabet to a .txt file found in Results/
+
+#with open("Results/*.txt", "ab") as file:
+#	for letter in string.ascii_uppercase:
+#		file.write(letter)
+
+
+with open("Results/inital_file.txt", "ab") as InFile:
+	for letter in string.ascii_uppercase:
+		InFile.write(letter)

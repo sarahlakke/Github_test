@@ -6,9 +6,8 @@
 
 
 for dir in Annotation_1 Alphabet_2 Numbers_3; do
-	cd $dir
+	cd $dir//
 	mkdir Data/
 	mkdir Results/
 	./master.sh
-	cd ../
 done

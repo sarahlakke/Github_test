@@ -2,13 +2,11 @@
 
 #Written by: Sarah Lakke
 #Date: 2019-1-17
-#Purpose: run code inside the subdirectories
-
+#Purpose: removes Data/ and Results/ from Annotation_1, Alphabet_2 and Number_3
 
 for dir in Annotation_1 Alphabet_2 Numbers_3; do
 	cd $dir
-	mkdir Data/
-	mkdir Results/
-	./master.sh
+	rm -rf Data
+	rm -rf Results
 	cd ../
 done

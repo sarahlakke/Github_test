@@ -1,0 +1,12 @@
+#! /bin/bash
+
+#Written by: Sarah Lakke
+#Date: 2019-1-17
+#Purpose: removes Data/ and Results/ from Annotation_1, Alphabet_2 and Number_3
+
+for dir in Annotation_1 Alphabet_2 Number_3: do
+	cd $dir
+	rm -r Data/
+	rm -r Results/
+	cd ../
+
